@@ -62,6 +62,11 @@ pip install beautifulsoup4
 # Pillow
 pip install Pillow
 
+# Panda
+apt-get install python-pandas
+or
+yum install python-pandas
+
 ~~~~
 
 ## Pre-requistes
