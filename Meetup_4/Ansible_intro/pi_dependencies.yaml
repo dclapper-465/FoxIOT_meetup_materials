@@ -1,8 +1,8 @@
 ---
 - hosts: local
   tasks:
-   - name: Install Numpy
-     apt: pkg=python-numpy state=installed update_cache=true
+    - name: Install Numpy
+      pip : name = numpy
 
-   - name : Install GPIO
-     apt: pkg=python-rpi.gpio state=installed update_cache=true
+    - name : Install GPIO
+      pip : name = RPi.GPIO

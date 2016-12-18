@@ -46,7 +46,7 @@ sudo apt-get install ansible
 # gpio
 sudo apt-get install python-rpi.gpio 
 or
-pip uninstall RPi.GPIO
+pip install RPi.GPIO
 
 # numpy
 sudo apt-get install python-numpy
@@ -70,8 +70,10 @@ sudo mv /etc/ansible/hosts /etc/ansible/hosts.orig
 * Changes in hosts file
 ~~~~
 [local]
-127.0.0.1
+127.0.0.1 ansible_ssh_user=viki
 ~~~~
+
+* viki is the username with which the ansible ssh to the particular machine
 
 * Check connection
 ~~~~
@@ -93,6 +95,7 @@ ansible -m ping local
 # create a file pi_dependencies.yml
 touch pi_dependencies.yml
 ~~~~
+
 * Contents of the file
 ~~~~
 ---
@@ -107,9 +110,20 @@ touch pi_dependencies.yml
 
 ## Steps to run playbook ?
 
+* Create password less ssh
+~~~~
+# Copy the public key to the other machine
+ssh-copy-id viki@localhost
+
+# Try ssh - you can access without password
+ssh viki@localhost
+~~~~
+
+* Run the playbook
 ~~~~
 ansible-playbook -s pi_dependencies.yaml
 ~~~~
+* -s stands for sudo user
 
 ## Reference Links :
 
