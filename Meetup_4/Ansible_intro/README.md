@@ -40,6 +40,7 @@ sudo apt-get install ansible
 * gpio 
 * numpy
 * beautifulsoup
+* Pillow
 
 ## Installation of pi modules 
 ~~~~
@@ -57,6 +58,9 @@ pip install numpy
 apt-get install python-bs4
 or 
 pip install beautifulsoup4
+
+# Pillow
+pip install Pillow
 
 ~~~~
 
