@@ -67,6 +67,11 @@ sudo apt-get install python-qt4
 or
 pip install PyQt
 
+# Panda
+apt-get install python-pandas
+or
+yum install python-pandas
+
 ~~~~
 
 ## Pre-requistes
@@ -133,6 +138,12 @@ ssh viki@localhost
 ansible-playbook -s pi_dependencies.yaml
 ~~~~
 * -s stands for sudo user
+
+## Sample Output
+
+~~~~
+
+~~~~
 
 ## Reference Links :
 

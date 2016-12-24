@@ -1,0 +1,3 @@
+[console_scripts]
+foxiot_train = foxiot_train.cli:main
+
