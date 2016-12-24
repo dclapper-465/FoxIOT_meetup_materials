@@ -62,11 +62,6 @@ pip install beautifulsoup4
 # Pillow
 pip install Pillow
 
-# pyqt
-sudo apt-get install python-qt4
-or
-pip install PyQt
-
 # Panda
 apt-get install python-pandas
 or
