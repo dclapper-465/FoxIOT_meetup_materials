@@ -1,8 +1,6 @@
 ---
 - hosts: local
   tasks:
-    - name: Install Numpy
-      pip : name = numpy
-
-    - name : Install GPIO
-      pip : name = RPi.GPIO
+   - name: Install Pillow
+     pip : 
+       name : Pillow

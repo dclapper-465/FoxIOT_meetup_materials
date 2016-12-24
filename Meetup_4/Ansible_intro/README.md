@@ -129,6 +129,12 @@ ansible-playbook -s pi_dependencies.yaml
 ~~~~
 * -s stands for sudo user
 
+## Sample Output
+
+~~~~
+
+~~~~
+
 ## Reference Links :
 
 * [Installation](http://docs.ansible.com/ansible/intro_installation.html)
