@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+.button {
+    background-color: #008CBA; /* Green */
+    border: 10;
+    border-radius: 10px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button:hover {background-color: #000080}
+.button:active {
+  background-color: #000080;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.button2 {background-color: #4CAF50;} /* Blue */
+.button2:hover {background-color: #3e8e41}
+.button2:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.button3 {background-color: #f44336;} /* Red */ 
+.button3:hover {background-color: #B22222}
+.button3:active {
+  background-color: #B22222;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+/*.button4 {background-color: #e7e7e7; color: black;} 
+.button5 {background-color: #555555;} */
+</style>
+</head>
+<body>
+
+<button class="button" onclick="post_rpi()">Blue</button>
+<button class="button button2">Green</button>
+<button class="button button3">Red</button>
+<!-- <button class="button button4">4</button> -->
+<!-- <button class="button button5">5</button> -->
+
+</body>
+<script type="text/javascript">
+
+function post_rpi() {
+    var data = JSON.stringify({
+      "command": "on"
+    });
+
+    console.log("Json data done");
+
+    var xhr = new XMLHttpRequest();
+    // xhr.withCredentials = true;
+
+    xhr.addEventListener("readystatechange", function () {
+      if (this.readyState === 4) {
+        console.log(this.responseText);
+      }
+    });
+
+    xhr.open("POST", "http://172.16.12.110:5000/rpiglow");
+    xhr.setRequestHeader("content-type", "application/json");
+    xhr.setRequestHeader("cache-control", "no-cache");
+    // xhr.setRequestHeader("postman-token", "421edd78-179c-2706-72f4-a7ee7d05a18c");
+    console.log("Request sent");
+    xhr.send(data);
+
+}
+
+</script>
+
+</html>

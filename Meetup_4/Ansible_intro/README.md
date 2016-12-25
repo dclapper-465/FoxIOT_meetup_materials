@@ -62,15 +62,28 @@ pip install beautifulsoup4
 # Pillow
 pip install Pillow
 
+<<<<<<< HEAD
 # pyqt
 sudo apt-get install python-qt4
 or
 pip install PyQt
 
+=======
+<<<<<<< HEAD
+>>>>>>> lokeshwaran97-patch-1
 # Panda
 apt-get install python-pandas
 or
 yum install python-pandas
+<<<<<<< HEAD
+=======
+=======
+# pyqt
+sudo apt-get install python-qt4
+or
+pip install PyQt
+>>>>>>> 0ce39e2e29ef6af620f5c5c02b73e31a2ce7fe75
+>>>>>>> lokeshwaran97-patch-1
 
 ~~~~
 
