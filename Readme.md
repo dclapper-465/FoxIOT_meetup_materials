@@ -46,7 +46,37 @@ Contains all the meetup course materials.
 <li>3. Python API</li>
 </ul>
 
-</p>
+<strong>4th Meetup : 17 December </strong>
+<br><br>
+<strong>Location : KGISL</strong>
+<br><br>
+<strong>Topics covered </strong>
+<ul>
+<li>1. LED Expt</li>
+<li>2. Python packaging</li>
+<li>3. Ansible</li>
+</ul>
+
+<strong>5h Meetup : 17 December </strong>
+<br><br>
+<strong>Location : KGISL</strong>
+<br><br>
+<strong>Topics covered </strong>
+<ul>
+<li>1. Web Services</li>
+<li>2. Web UI</li>
+</ul>
+
+<strong>6th Meetup : 17 December </strong>
+<br><br>
+<strong>Location : KGISL</strong>
+<br><br>
+<strong>Topics covered </strong>
+<ul>
+<li>1. GitBook Documentation</li>
+<li>2. Dash Boarding</li>
+</ul>
+
 <h1> Project List </h1>
 <ul>
 <li>Team 1 : Human Pose detection.</li>
