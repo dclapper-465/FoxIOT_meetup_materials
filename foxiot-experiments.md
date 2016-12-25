@@ -2,11 +2,7 @@
 
 About Us :
 
-Activities : 
+Activities :
 
-Purpose of Gitbook
-
-
-
-
+Purpose: of Gitbook
 
