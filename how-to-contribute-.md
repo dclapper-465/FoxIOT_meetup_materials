@@ -18,4 +18,6 @@ git clone https://github.com/dvigneshwer/FoxIOT_meetup_materials.git
 
 * Create videos of the projects and share it to the FoxIOT group via #FoxIOT and @MozillaTN in twitter
 
+* Send a PR to (Mozilla Science Study Group Lessons)[https://github.com/mozillascience/studyGroupLessons/] so that study groups around the globe can consume it :) 
+
 
